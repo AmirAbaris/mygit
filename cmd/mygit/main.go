@@ -15,9 +15,14 @@ func main() {
 
 	switch inputCommand {
 	case "init":
-		command.Init()
+		err := command.Init()
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
 	default:
 		fmt.Println("unknown command")
+
 	}
 
 }
