@@ -5,9 +5,9 @@ import "os"
 func Create() error {
 	// directories
 	dirs := []string{
-		".git",
-		".git/objects",
-		".git/refs",
+		".mygit",
+		".mygit/objects",
+		".mygit/refs",
 	}
 
 	for _, dir := range dirs {
@@ -19,7 +19,7 @@ func Create() error {
 
 	// files
 	files := []string{
-		".git/HEAD",
+		".mygit/HEAD",
 	}
 
 	for _, file := range files {
