@@ -1,4 +1,4 @@
-package mygit
+package main
 
 import (
 	"fmt"
