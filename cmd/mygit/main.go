@@ -20,6 +20,11 @@ func main() {
 			fmt.Println(err)
 			os.Exit(1)
 		}
+
+	case "status":
+		result := command.Status()
+		fmt.Println(result)
+
 	default:
 		fmt.Println("unknown command")
 
